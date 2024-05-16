@@ -1,0 +1,121 @@
+:root{
+    --verde-principal: #007F73;
+    --verde-secundario: #4CCD99;
+    --cor-principal: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,127,115,1) 50%, rgba(76,205,153,1) 100%);
+    --cor-fonte: #9eddcc;
+    --cor-fonte-hover: #F1FADA;
+}
+
+body{
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+    margin: none;
+    padding: none;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background: rgb(2,0,36);
+    background: var(--cor-principal);
+    color: var(--cor-fonte);
+    border: 2px 1em var(--cor-fonte);
+}
+
+.titulo{
+    font-size: 70px;
+}
+
+.pagina_inicial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao{
+    color: var(--cor-fonte);
+    background: rgb(2,0,36);
+    background: transparent;
+    font-size: 25px;
+    font-weight: 600;
+    border: 2px solid var(--cor-fonte);
+    border-radius: 20px;
+    padding: 1em;
+}
+
+.botao:hover{
+    color:var(--cor-fonte-hover);
+    border-color: var(--cor-fonte-hover);
+}
+
+.area__pergunta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--cor-fonte);
+}
+
+.pergunta__input{
+    color: var(--cor-fonte);
+    background: transparent;
+    border: 2px solid var(--cor-fonte);
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 3px 10px;
+}
+
+
+.pergunta__input:hover{
+    border-color: var(--cor-fonte-hover);
+    color: var(--cor-fonte-hover);
+}
+
+.mensagem__carregamento{
+    font-size: 60px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.gif_carregamento{
+    width: 180px;
+    height: 180px; 
+}
+
+.mensagem__final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--cor-fonte);
+    align-content: center;
+}
+
+.mensagem__final__texto{
+    font-size: 60px; 
+    padding-left: 150px;
+}
+
+
+.imagens{
+    display: flex;
+    justify-content: center;
+    padding: 0 500px;
+    width: 180px;
+    height: 180px;
+    gap: 20px;
+}
+
+.reiniciar{
+    margin: 50px 0;
+}
+
+.hidden{
+    display: none;
+}

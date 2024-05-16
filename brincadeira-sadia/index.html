@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa</title>
+    <link rel="icon" href="imagens/lupa.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="cabecalho">
+        <div class="pagina_inicial">
+            <h1 class="titulo">Bem vindo ao meu site de pesquisa</h1>
+            <button class="botao" id="botao__iniciar">Clique aqui para iniciar a pesquisa</button>
+        </div>
+        <div class="hidden area__pergunta">
+            <form class="pergunta">
+                <p class="area__pergunta--texto comando">Prescisamos do seu nome para iniciar nossa pesquisa</p>
+                <input type="text" id="campo__nome" value="" placeholder="Insira o seu nome" class="pergunta__input">
+                <input type="submit" class="pergunta__input " id="bt_enviar">
+            </form>
+        </div>
+        <div class="mensagem__carregamento"></div>
+        <div class="mensagem__final">
+        </div>
+        <button class="botao reiniciar hidden" id="botao__reiniciar">Voltar pro inicio</button>     
+    </section>
+    <script src="main.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
