@@ -25,7 +25,7 @@ BTpergunta.addEventListener('submit', function(e) {
 
 
 function criaIntervalo(){
-    const mensagens = ['Testando', 'Comparando possibilidades','Calculando Resultado'];
+    const mensagens = ['Testando', 'Bucando na base de dados','Preparando formulario'];
     let contador = 0;
 
     criarMensagemCarregamento(mensagens[0]);
@@ -33,14 +33,15 @@ function criaIntervalo(){
     var intervalo = setInterval(() =>{
         let mensagem = mensagens[contador];
 
-            criarMensagemCarregamento(mensagem);
-            contador++;
-
-        if(contador === 3){
+        if(contador >= 3){
             mensagemFinal();
             areaCarregamento.innerHTML = ''
             clearInterval(intervalo);
+        }else{
+            criarMensagemCarregamento(mensagem);
+            contador++;
         }
+
     }, 1000);
 
 }
