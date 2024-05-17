@@ -28,6 +28,8 @@ function criaIntervalo(){
     const mensagens = ['Testando', 'Bucando na base de dados','Preparando formulario'];
     let contador = 0;
 
+    criarMensagemCarregamento(mensagens[0]);
+
     var intervalo = setInterval(() =>{
         let mensagem = mensagens[contador];
 
