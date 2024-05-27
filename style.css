@@ -9,8 +9,7 @@
 body{
     background-color: black;
     font-family: 'Times New Roman', Times, serif;
-    margin: none;
-    padding: none;
+    margin: 0;
 }
 
 .cabecalho{
